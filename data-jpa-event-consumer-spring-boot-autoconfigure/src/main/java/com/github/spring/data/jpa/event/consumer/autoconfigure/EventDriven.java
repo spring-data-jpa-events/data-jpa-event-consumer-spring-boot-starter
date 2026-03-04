@@ -11,5 +11,5 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface EventDriven {
   /** The kafka topic name to consume events from to keep this entity in sync. */
-  String consumeTopic();
+  String topic();
 }
