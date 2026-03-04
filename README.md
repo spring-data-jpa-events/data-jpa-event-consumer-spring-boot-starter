@@ -28,7 +28,7 @@ Once you added the starter as a dependency to your project, annotate a local JPA
 
 ``` java
 @Entity
-@EventDriven(consumeTopic = "user")
+@EventDriven(topic = "user")
 @Table(name = "user")
 @Data
 public class User {
