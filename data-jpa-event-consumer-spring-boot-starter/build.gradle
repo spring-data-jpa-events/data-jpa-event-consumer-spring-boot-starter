@@ -1,0 +1,12 @@
+plugins {
+  id 'java-library'
+  id 'jpa-events.java-convention'
+}
+
+group = parent.group
+version = parent.version
+
+dependencies {
+  api project(':data-jpa-event-consumer')
+  api project(':data-jpa-event-consumer-spring-boot-autoconfigure')
+}

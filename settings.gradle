@@ -1,0 +1,10 @@
+plugins {
+  id 'org.gradle.toolchains.foojay-resolver-convention' version '1.0.0'
+}
+
+rootProject.name = 'data-jpa-event-consumer'
+
+include 'data-jpa-event-consumer'
+include 'data-jpa-event-consumer-spring-boot-autoconfigure'
+include 'data-jpa-event-consumer-spring-boot-starter'
+include 'data-jpa-event-consumer-spring-boot-sample-app'
