@@ -8,7 +8,7 @@ import java.util.UUID;
 import lombok.Data;
 
 @Entity
-@EventDriven(consumeTopic = "user")
+@EventDriven(topic = "user")
 @Table(name = "\"user\"")
 @Data
 public class User {

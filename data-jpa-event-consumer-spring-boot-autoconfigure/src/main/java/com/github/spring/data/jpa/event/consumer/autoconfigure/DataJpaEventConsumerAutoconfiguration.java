@@ -64,7 +64,7 @@ public class DataJpaEventConsumerAutoconfiguration {
       Repositories repositories,
       EntityManager entityManager,
       ObjectMapper objectMapper) {
-    String topic = entityClass.getAnnotation(EventDriven.class).consumeTopic();
+    String topic = entityClass.getAnnotation(EventDriven.class).topic();
     JpaRepository<T, ID> repository =
         (JpaRepository<T, ID>)
             repositories
